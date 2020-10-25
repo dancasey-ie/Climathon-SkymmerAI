@@ -12,13 +12,12 @@ function printNavbar() {
     echo '<div class="bigNavBar">';
     echo '<nav class="materialContrast outerRestrictor navbar">';
     echo '<div class="innerRestrictor">';
-    echo '<a href="https://indentationerror.com/" id="navbarStripeContainer" class="btnContrastLight navbarItem">';
+    echo '<a href="https://juzo.indentationerror.com/flooding/" id="navbarStripeContainer" class="btnContrastLight navbarItem">';
     echo '<div id="navbarLogo">';
     echo '<img src="https://juzo.indentationerror.com/flooding/logo.png" style="height:100%;"></img>';
     echo '</div>';
     echo '</a>';
-    echo '<a href="https://account.indentationerror.com/" class="buttonContrastLight navbarItem">Account</a>';
-    echo '<a href="https://explorer.indentationerror.com/" class="buttonContrastLight navbarItem">Explorer</a>';
+    echo '<a href="https://juzo.indentationerror.com/flooding/cpanel" class="buttonContrastLight navbarItem">Control Panel</a>';
     echo '</div>';
     echo '</nav>';
     echo '</div>';
@@ -52,11 +51,9 @@ function printNavbar() {
     echo '</script>'."\n";
     
     echo '<nav id="navMenu" class="navMenu hidden">'."\n";
-    echo '<a class="navMenuLink" href="https://indentationerror.com/"><h1>Home</h1></a>'."\n";
+    echo '<a class="navMenuLink" href="https://juzo.indentationerror.com/flooding/"><h1>Home</h1></a>'."\n";
     echo '<div class="smallSpacer"></div>'."\n";
-    echo '<a class="navMenuLink" href="https://account.indentationerror.com/"><h1>Account</h1></a>'."\n";
-    echo '<div class="smallSpacer"></div>'."\n";
-    echo '<a class="navMenuLink" href="https://explorer.indentationerror.com/"><h1>Explorer</h1></a>'."\n";
+    echo '<a class="navMenuLink" href="https://juzo.indentationerror.com/cpanel/"><h1>Control Panel</h1></a>'."\n";
     echo '</nav>'."\n";
 
 //     $uData = getUserInfoFromSession();
