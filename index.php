@@ -21,13 +21,13 @@
 
 .mainPageBuffer1 {
     position: relative;
-    height:20vh;
+    height:25vh;
 }
 
 
 .mainPageBuffer2 {
     position: relative;
-    height:20vh;
+    height:25vh;
 }
 
 </style>
@@ -46,8 +46,8 @@
     </div>
     <div class="mainPageBuffer1 spacer"></div>
     <div class="innerRestrictor innerRestrictor">
-        <h1>Flood defences for the 21'st century</h1>
-        <p>Using blah blah Machine Learning blah blah e.t.c</p>
+        <h1>Flood defences that don't cost the earth</h1>
+        <p>We use machine learning to predict and actively manage floods with our network of small and low environmental impact storage tanks.</p>
     </div>
     <div class="mainPageBuffer2 spacer"></div>
     <div class="innerRestrictor innerRestrictor">
@@ -58,14 +58,14 @@
 <div class="material outerRestrictor outerRestrictor">
     <div class="innerRestrictor innerRestrictor">
         <h1>About us</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dapibus lectus nec velit venenatis, in interdum sapien tristique. Donec id pulvinar eros. Suspendisse vulputate vel felis ut pellentesque. Pellentesque et venenatis nulla. Nunc sagittis neque a neque molestie sagittis ac et neque. Vestibulum posuere vitae nisl pellentesque mollis. Aenean ultricies vulputate elit eu ornare. Etiam tempor lorem eget nisl accumsan, ac mattis ipsum lobortis. In placerat tristique est, sit amet sollicitudin tellus tempor venenatis. Nulla pharetra egestas massa, a sollicitudin metus egestas et. Duis ut libero cursus, ultrices tellus et, pretium nisl. Aliquam id mi sit amet est vehicula interdum eget in risus. Donec diam tellus, sagittis ut fermentum id, consectetur a odio. Nam scelerisque at lorem id porttitor. Curabitur metus nisl, fringilla a metus sed, vehicula rutrum velit. Morbi rhoncus gravida ex, elementum gravida lacus consequat id. </p>
+        <p>Flood defences have traditionally been large concrete structures, with huge environmental and ecological impact. We want to shake up the industry with a new and innovative model. By distributing the task of storing storm water to small tanks around the country, we can effectively limit single points of failure, and remove the need to destory the natural landscape to create dams and levees.</p>
     </div>
 </div>
 
 <div class="materialEmphasis outerRestrictor outerRestrictor">
     <div class="innerRestrictor innerRestrictor">
         <h1>How we work</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dapibus lectus nec velit venenatis, in interdum sapien tristique. Donec id pulvinar eros. Suspendisse vulputate vel felis ut pellentesque. Pellentesque et venenatis nulla. Nunc sagittis neque a neque molestie sagittis ac et neque. Vestibulum posuere vitae nisl pellentesque mollis. Aenean ultricies vulputate elit eu ornare. Etiam tempor lorem eget nisl accumsan, ac mattis ipsum lobortis. In placerat tristique est, sit amet sollicitudin tellus tempor venenatis. Nulla pharetra egestas massa, a sollicitudin metus egestas et. Duis ut libero cursus, ultrices tellus et, pretium nisl. Aliquam id mi sit amet est vehicula interdum eget in risus. Donec diam tellus, sagittis ut fermentum id, consectetur a odio. Nam scelerisque at lorem id porttitor. Curabitur metus nisl, fringilla a metus sed, vehicula rutrum velit. Morbi rhoncus gravida ex, elementum gravida lacus consequat id. </p>
+        <p>SkymmerAI's bespoke Machine Learning software coupled with connected IoT devices, provide the most accurate flood warning systems in areas with pluvial flood risk.</p>
     </div>
 </div>
 
