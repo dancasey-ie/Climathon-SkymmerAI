@@ -4,6 +4,49 @@
 ?>
 
 <title>Skymmer Control Panel</title>
+
+<style>
+.tankInfo{
+    position:relative;
+    float:left;
+    width:auto;
+}
+
+.tank{
+    position:relative;
+    float:right;
+    width:20mm;
+    height:30mm;
+    background-color:#D3DDDF;
+    border-radius:2mm;
+}
+
+.tankFill{
+    position:absolute;
+    bottom:0;
+    width:100%;
+    background-color:#3b8dad;
+}
+
+.tankLabel{
+    position:absolute;
+    width:100%;
+    bottom:0;
+    line-height: 30mm;
+    text-align: center;
+    color:#000000;
+}
+
+.tankLabel2{
+    position:absolute;
+    width:100%;
+    bottom:0;
+    line-height: 30mm;
+    text-align: center;
+    color:#ffffff;
+}
+</style>
+
 </head>
 <body>
 
@@ -13,22 +56,87 @@
     printTitle("Control Panel");
 ?>
 
-<div class="material flexibleContainer">
-    <div class="material outerRestrictor outerRestrictor">
-        <div class="innerRestrictor innerRestrictor">
-            <h1>Test</h1>
-            <p></p>
-            <div id="outputArea" style="width:100%;height:120mm;overflow-y:scroll;">
-            </div>
-            <!--<div class="buttonBoundingBox">
-                <a href="../software" class="button">Browse software</a>
-            </div> -->
-        </div>
+
+<div class="materialEmphasis outerRestrictor outerRestrictor">
+    <div class="innerRestrictor innerRestrictor">
+        <h2>Imminent flood alert for Stirling</h2>
+        <h3>Current rainfall: 10mm</h3>
+        <h3>Expected 24hr peak rainfall: 20mm</h3>
+        <h3>Current storm drain flow: 89%</h3>
+        <h3>Predicted storm drain flow at peak: 100%</h3>
+        <h3>Current tank capacity in area: 76%</h3>
+        <h3>Predicted tank capacity in area at peak: 13%</h3>
+    </div>
+</div>
+<div class="material outerRestrictor outerRestrictor">
+    <div class="innerRestrictor innerRestrictor">
+        <img src="fakeMap1.png" style="width:100%;"></img>
     </div>
 </div>
 
-<script>
+<div class="smallSpacer"></div>
 
+<div class="material outerRestrictor outerRestrictor">
+    <div class="innerRestrictor innerRestrictor">
+        <div class="tankInfo">
+            <h2>Stirling</h2>
+            <h3>Tank status: Draining</h3>
+            <h3>Current target: 0%</h3>
+            <h3>Current rainfall: 13mm</h3>
+            <h3>Expected 24hr peak rainfall: 22mm</h3>
+            <h3>Current storm drain flow: 89%</h3>
+            <h3>Predicted storm drain flow at peak: 100%</h3>
+            <h3>Current tank capacity in area: 76%</h3>
+            <h3>Predicted tank capacity in area at peak: 13%</h3>
+        </div>
+        <div class="tank"><h3 class="tankLabel">24%</h3><div class="tankFill" style="height:24%;"><h3 class="tankLabel2">24%</h3></div></div>
+    </div>
+</div>
+
+<div class="smallSpacer"></div>
+
+<div class="material outerRestrictor outerRestrictor">
+    <div class="innerRestrictor innerRestrictor">
+        <div class="tankInfo">
+            <h2>Dunblane</h2>
+            <h3>Tank status: Draining</h3>
+            <h3>Current target: 35%</h3>
+            <h3>Current rainfall: 12mm</h3>
+            <h3>Expected 24hr peak rainfall: 13mm</h3>
+            <h3>Current storm drain flow: 43%</h3>
+            <h3>Predicted storm drain flow at peak: 43%</h3>
+            <h3>Current tank capacity in area: 29%</h3>
+            <h3>Predicted tank capacity in area at peak: 34%</h3>
+        </div>
+        <div class="tank"><h3 class="tankLabel">71%</h3><div class="tankFill" style="height:71%;"><h3 class="tankLabel2">71%</h3></div></div>
+    </div>
+</div>
+
+<div class="smallSpacer"></div>
+
+<div class="material outerRestrictor outerRestrictor">
+    <div class="innerRestrictor innerRestrictor">
+        <div class="tankInfo">
+            <h2>Falkirk</h2>
+            <h3>Tank status: Filling</h3>
+            <h3>Current target: 65%</h3>
+            <h3>Current rainfall: 27mm</h3>
+            <h3>Expected 24hr peak rainfall: 27mm</h3>
+            <h3>Current storm drain flow: 86%</h3>
+            <h3>Predicted storm drain flow at peak: 86%</h3>
+            <h3>Current tank capacity in area: 87%</h3>
+            <h3>Predicted tank capacity in area at peak: 23%</h3>
+        </div>
+        <div class="tank"><h3 class="tankLabel">13%</h3><div class="tankFill" style="height:13%;"><h3 class="tankLabel2">13%</h3></div></div>
+    </div>
+</div>
+
+
+
+<script>
+    function addTank() {
+    
+    }
 </script>
 
 <div class="smallSpacer"></div>
