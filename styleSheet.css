@@ -1,0 +1,926 @@
+@font-face {
+  font-family: "Sen";
+  src: url("https://repo.indentationerror.com/fonts/Sen-Bold.woff2") format('woff2'),
+       url("https://repo.indentationerror.com/fonts/Sen-Bold.woff") format('woff'),
+       url("https://repo.indentationerror.com/fonts/Sen-Bold.ttf") format('truetype');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Roboto Slab";
+  src: url("https://repo.indentationerror.com/fonts/RobotoSlab-Regular.woff2") format('woff2'),
+       url("https://repo.indentationerror.com/fonts/RobotoSlab-Regular.woff") format('woff'),
+       url("https://repo.indentationerror.com/fonts/RobotoSlab-Regular.ttf") format('truetype');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Roboto Slab";
+  src: url("https://repo.indentationerror.com/fonts/RobotoSlab-Bold.woff2") format('woff2'),
+       url("https://repo.indentationerror.com/fonts/RobotoSlab-Bold.woff") format('woff'),
+       url("https://repo.indentationerror.com/fonts/RobotoSlab-Bold.ttf") format('truetype');
+  font-weight: bold;
+}
+
+/*
+@font-face {
+  font-family: "Rubik Mono One";
+  src: url("https://repo.indentationerror.com/fonts/RubikMonoOne-Regular.ttf");
+  font-weight: bold;
+}*/
+
+
+body {
+	overflow-y: scroll;
+	overflow-x: hidden;
+	width:100vw;
+	margin: 0;
+	padding: 0;
+    display: inline-block;
+	color: #000000;
+	font-size: 14pt;
+	font-family: "Sen", "Gilroy", "Circular Std", "TT Commons", "Futura", "Alata", sans-serif;
+	background-color: #D3DDDF;
+}
+
+div {
+	word-wrap: normal;
+    display: inline-block;
+	overflow: hidden;
+	margin:0;
+	padding:0;
+}
+
+main {
+	word-wrap: normal;
+	overflow: hidden;
+	margin:0;
+	padding:0;
+}
+
+nav {
+	word-wrap: normal;
+	overflow: hidden;
+	margin:0 0 -2mm 0;
+	padding:0;
+}
+
+
+img {
+	filter: saturate(1.25);
+}
+
+b {
+    margin:0;
+    padding:0;
+}
+
+form {
+    margin:0;
+    padding:0;
+}
+
+.smallNavBar{
+    position:fixed;
+    top:0;
+    left:0;
+    height:14mm;
+    z-index:500;
+    display:none;
+    margin:0;
+    padding:0;
+    background-color:#000000bb;
+}
+.smallNavBarSpacer{
+    display:none;
+    margin-top:0;
+    margin-bottom:3mm;
+    margin-left:0;
+    margin-right:0;
+    height:14mm;
+    width:100vw;
+    padding:0;
+    background-color:#000000;
+}
+.bigNavBar{
+    display:block;
+    margin:0;
+    padding:0;
+}
+
+.navMenu {
+    background-color:#ffffffbb;
+    position:fixed;
+    display:none;
+    box-sizing:border-box;
+    z-index:600;
+    top:14mm;
+    left:-100vw;
+    bottom:0mm;
+    width:100vw;
+    padding:7mm 5mm 5mm 5mm;
+}
+
+.navMenu.hidden {
+    transition: left 0.3s, opacity 0.3s;
+    transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+    left:-100vw;
+    opacity: 0;
+}
+.navMenu.shown {
+    transition: left 0.3s, opacity 0.3s;
+    transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+    left:0vw;
+    opacity: 1;
+}
+
+.navMenuLink {
+    transition: padding-left 0.3s;
+    transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+    padding-left:0;
+}
+
+.navMenuLink:hover {
+    padding-left:5mm;
+}
+
+@media all and (max-width: 200mm) {
+	.smallNavBar{
+        display:block;
+    }
+    .smallNavBarSpacer{
+        display:block;
+    }
+    .bigNavBar{
+        display:none;
+    }
+    .navMenu {
+        display:block;
+    }
+}
+
+@media all and (min-width: 200mm) {
+    .lt200{
+        display:none;
+    }
+}
+
+@media all and (max-width: 200mm) {
+	.gt200{
+        display:none;
+    }
+}
+
+@media all and (min-width: 130mm) {
+    .lt130{
+        display:none;
+    }
+}
+
+@media all and (max-width: 130mm) {
+	.gt130{
+        display:none;
+    }
+}
+
+.materialIcons {
+	font-family: 'Material Icons';
+	font-weight: normal;
+	font-style: normal;
+	font-size: 8mm;  /* Preferred icon size */
+	display: inline-block;
+	line-height: 1;
+	text-transform: none;
+	letter-spacing: normal;
+	word-wrap: normal;
+	white-space: nowrap;
+	direction: ltr;
+	/* Support for all WebKit browsers. */
+	/*-webkit-font-smoothing: antialiased;*/
+	/* Support for Safari and Chrome. */
+	/*text-rendering: optimizeLegibility;*/
+	/* Support for Firefox. */
+	/*-moz-osx-font-smoothing: grayscale;*/
+    /* Support for IE. */
+	font-feature-settings: 'liga';
+}
+
+.genericIconRight {
+	float:right;
+	margin-right:0.75em;
+	margin-top:-0.05em;
+	height:0.5em;
+}
+
+.arrowIconLeft {
+	float:left;
+	margin-right:0.5em;
+	margin-left:-0.3em;
+	margin-top:-0.1em;
+	height:0.5em;
+	font-size:8mm;
+}
+
+.arrowIconRight {
+	float:right;
+	margin-right:0.47em;
+	margin-top:-0.1em;
+	height:0.5em;
+	font-size:8mm;
+}
+
+.buttonBoundingBox {
+	margin:3mm 0mm -3mm 0mm;
+	/*overflow:visible;*/
+	background-color:transparent;
+	display:block;
+}
+
+/* Alex's Loading Icon */
+.loadingIcon {
+	position: absolute;
+	overflow: visible;
+	width:24mm;
+	height:24mm;
+	background-color:transparent;
+}
+.loadingIconBar {
+	position: absolute;
+	overflow: visible;
+	width:15%;
+	margin-left:2.5%;
+	height:50%;
+	top:25%;
+	/*left:50%;*/
+	background-color:#3b8dad;
+	animation-name: loadingIconBar1;
+	animation-duration: 2s;
+	/*animation-delay: 0s;*/
+	animation-iteration-count: infinite;
+	animation-timing-function: cubic-bezier(0,0.5,0.5,1);
+	/*box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.3);*/
+}
+
+@keyframes loadingIconBar1 {
+	0%  {
+		height: 50%;
+		top: 25%;
+	}
+	10% {
+		height: 100%;
+		top: 0%;
+	}
+	20% {
+		height: 25%;
+		top: 37.5%;
+	}
+	40%{
+		height: 50%;
+		top: 25%;
+	}
+	100%{
+		height: 50%;
+		top: 25%;
+	}
+}
+/* Alex's Loading Icon */
+
+input[type="radio"] {
+	display:none;
+}
+
+input[type="radio"] + label {
+	display:inline-block;
+	width:12mm;
+	height:12mm;
+	margin:3mm 3mm 0 0;
+	vertical-align:middle;
+	background:url(https://s5.baldeonline.com/img/radioButtonImageMap.png) -12mm top no-repeat;
+	cursor:pointer;
+	filter: saturate(1.25);
+}
+
+input[type="radio"]:checked + label {
+	background:url(https://s5.baldeonline.com/img/radioButtonImageMap.png) -18mm top no-repeat;
+}
+
+.radiolabel {
+	display:block;
+	margin:2mm 0px 0px 20mm;
+}
+
+.spacer {
+	background-color:transparent;
+	display:block;
+	margin:0mm;
+	padding:0mm;
+    width:100%;
+    height:0;
+}
+
+.tinySpacer {
+	background-color:transparent;
+	display:block;
+	margin:0mm;
+	padding:0mm;
+    width:100%;
+    height:1mm;
+}
+
+.smallSpacer {
+	background-color:transparent;
+	display:block;
+	margin:0mm;
+	padding:0mm;
+    width:100%;
+    height:3mm;
+}
+
+.largeSpacer {
+	background-color:transparent;
+	display:block;
+	margin:0mm;
+	padding:0mm;
+    width:100%;
+    height:6mm;
+}
+
+.hugeSpacer {
+	background-color:transparent;
+	display:block;
+	margin:0mm;
+	padding:0mm;
+    width:100%;
+    height:16mm;
+}
+
+.popupmaterial {
+	background-color:#ffffff;
+	color:#000000;
+	display:block;
+	padding:2mm 0mm 0mm 0mm;
+	box-shadow: 0mm 2mm 6mm -2mm rgba(0,0,0,0.5);
+}
+
+.largepopupmaterial {
+	background-color:#ffffff;
+	color:#000000;
+	display:block;
+	padding:0mm 0mm 0mm 0mm;
+	box-shadow: 0mm 2mm 6mm 2mm rgba(0,0,0,0.5);
+}
+
+.material {
+	background-color:#ffffff;
+	color:#000000;
+	display:block;
+	box-sizing:border-box;
+}
+
+.materialEmphasis {
+	background-color:#3b8dad;
+	color:#ffffff;
+	display:block;
+	box-sizing:border-box;
+}
+
+.materialContrast {
+	background-color:#000000;
+	color:#ffffff;
+	display:block;
+	box-sizing:border-box;
+}
+
+.standardTitlePadding {
+    padding:7mm 5mm 3mm 5mm;
+}
+
+.standardSubtitlePadding {
+    padding:3mm 5mm 3mm 5mm;
+}
+
+.standardBoxPadding {
+    padding:5mm 5mm 5mm 5mm;
+}
+
+.contrastColour {
+	color:#000000;
+}
+
+.contrastBGColour {
+	background-color:#000000;
+}
+
+.outerRestrictor {
+	box-sizing:border-box;
+    margin: 0;
+	padding:7mm 5mm 6mm 5mm;
+	position: relative;
+	width:100%;
+	overflow: hidden;
+	z-index:5;
+    /*border: 1px dashed #000000;*/
+}
+
+.innerRestrictor {
+    box-sizing:border-box;
+    margin: auto;
+	padding:0mm 0mm 0mm 0mm;
+	position: relative;
+    display: block;
+	width:200mm;
+	min-width:80%;
+	max-width:100%;
+	background-color: transparent;
+	overflow: visible;
+    /*border: 1px dashed #000000;*/
+}
+
+
+@media all and (min-width: 200mm) {
+    .outerRestrictorLeftPreferred {
+        width:50%;
+        padding-right:0mm;
+        margin-left:-1.5mm;
+        margin-right:1.5mm;
+        float:left;
+    }
+    .innerRestrictorLeftPreferred {
+        width:100mm;
+        min-width:80%;
+        max-width:100%;
+        padding-right:5mm;
+        padding-left:1.5mm;
+        float:right;
+    }
+    .outerRestrictorRightPreferred {
+        width:50%;
+        padding-left:0mm;
+        margin-left:1.5mm;
+        margin-right:-1.5mm;
+        float:right;
+    }
+    .innerRestrictorRightPreferred {
+        width:100mm;
+        min-width:80%;
+        max-width:100%;
+        padding-right:1.5mm;
+        padding-left:5mm;
+        float:left;
+    }
+    .flexiblePreferredContainer {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@media all and (max-width: 200mm) {
+	.outerRestrictorLeftPreferred {
+        width:100%;
+        margin-bottom:3mm;
+    }
+    .innerRestrictorLeftPreferred {
+        
+    }
+    .outerRestrictorRightPreferred {
+        width:100%;
+    }
+    .innerRestrictorRightPreferred {
+        
+    }
+    .flexiblePreferredContainer {
+        margin: 0;
+        padding: 0;
+        background-color: transparent;
+    }
+}
+
+.fullwidth {
+    width:100%;
+}
+
+.nomargin {
+	margin:0mm 0mm 0mm 0mm;
+}
+
+a {
+	float: left;
+	text-decoration: inherit;
+	color:inherit;
+	margin-right:0;
+	margin-left:0;
+	margin-top:0.0mm;
+	margin-bottom:0.0mm;
+}
+
+li {
+	display: inline;
+	padding: 1mm;
+}
+
+p {
+	font-size: 14pt;
+	font-family: "Roboto Slab", sans-serif;
+	text-align: left;
+	margin:0mm 0mm 0mm 0mm;
+}
+
+h1 {
+	text-align: left;
+	margin:-0.3em 0mm 0mm 0mm;
+	font-size: 10mm;
+	font-weight: 700;
+}
+
+h2 {
+	text-align: left;
+	margin:0mm 0mm 0mm 0mm;
+	font-size: 7mm;
+	font-weight: 700;
+}
+
+h3 {
+	text-align: left;
+	margin:0mm 0mm 0mm 0mm;
+	font-size: 4mm;
+	font-weight: 700;
+}
+
+h4 {
+	text-align: left;
+	margin:0mm 0mm 0mm 0mm;
+	font-weight:normal;
+}
+
+h5 {
+	text-align: left;
+	margin:0mm 0mm 0mm 0mm;
+	font-size: 4mm;
+	font-weight: normal;
+}
+
+h6 {
+	text-align: left;
+	margin:0mm 0mm 0mm 0mm;
+	font-weight:normal;
+	font-family: "Roboto Slab", "Rockwell", "Egyptian Slate", "Serifa", "ITC Lubalin Graph", "Soho", sans-serif;
+    display: inline-block;
+}
+
+.button {
+	text-align: left;
+	display:block;
+	font-size: 5mm;
+	color: #ffffff;
+	background: #3b8dad;
+	padding: 0.6em 0.8em 0.55em 0.8em;
+	margin: 0mm 3mm 3mm 0mm;
+	border: solid 0mm;
+    border-radius:9em;
+	text-decoration: none;
+	transition-duration: 0.2s;
+	transition-property: background-color, color;
+	transition-timing-function: ease;
+    box-sizing:border-box;
+    cursor: pointer;
+}
+
+.button:hover {
+	text-decoration: none;
+	color: #000000;
+	background-color: #D3DDDF;
+}
+
+.buttonContrastLight {
+	text-align: left;
+	display:block;
+	font-size: 5mm;
+	color: #ffffff;
+	background: #173743;
+	padding: 0.6em 0.8em 0.55em 0.8em;
+	margin: 0mm 3mm 0mm 0mm;
+	border: solid 0mm;
+    border-radius:9em;
+	text-decoration: none;
+	transition-duration: 0.2s;
+	transition-property: background-color, color;
+	transition-timing-function: ease;
+    box-sizing:border-box;
+    cursor: pointer;
+}
+
+.buttonContrastLight:hover {
+	text-decoration: none;
+	color: #000000;
+	background-color: #D3DDDF;
+}
+
+.field {
+	display:inline-block;
+	font-size: 5mm;
+    font-family: "Sen", "Gilroy", "Circular Std", "TT Commons", "Futura", "Alata", sans-serif;
+	color: #000000;
+	padding: 0.30em 0.8em 0.30em 0.8em;
+	margin: 0mm 3mm 0mm 0mm;
+	border-style: solid;
+	border-width: 0mm 0mm 0mm 0mm;
+	border-color: #000000;
+    border-radius:9em;
+	text-decoration: none;
+	outline: 0mm dotted #000000;
+	background: #BAC2C4 !important;
+	height:12mm;
+	transition-duration: 0.2s;
+	transition-property: box-shadow;
+	box-shadow: 0mm 0mm 0mm 0mm #000000 inset;
+	box-sizing: border-box;
+    cursor: text;
+}
+
+.field:hover {
+	box-shadow: 0em 0em 0em 0.3em #000000 inset;
+}
+
+.field:focus {
+	box-shadow: 0em 0em 0em 0.3em #3b8dad inset;
+}
+
+.navbar {
+    position:relative;
+    top:-3mm;
+    padding:0mm 5mm 0mm 5mm;
+    width:100vw;
+    overflow:hidden;
+}
+
+.navbarItem {
+    position:relative;
+    margin-top:3mm;
+    margin-bottom:0mm;
+    margin-right:3mm;
+    box-sizing:border-box;
+    padding:3.8mm 5.5mm 3.5mm 5mm;
+    border-radius:0;
+    height:14mm;
+    overflow:hidden;
+}
+
+#navbarLogo {
+    position:relative;
+    top:-14mm;
+    left:-5mm;
+    width:32mm;
+    height:32mm;
+    overflow:visible;
+}
+
+#navbarStripeContainer {
+    position:relative;
+    box-sizing:border-box;
+    width:40mm;
+    height:14mm;
+    overflow:hidden;
+    filter: grayscale(50%);
+    transition-duration: 0.2s;
+	transition-property: filter;
+	transition-timing-function: ease;
+}
+
+#navbarStripeContainer:hover {
+    filter: grayscale(0%);
+}
+
+
+
+#smallNavbarStripe {
+    position:absolute;
+    top:-0%;
+    left:-0%;
+    transform-origin: 50% 50%;
+    transform: rotate(-45deg) scale(1.5);
+    width:100%;
+    height:100%;
+    overflow:visible;
+}
+
+#smallHomeNavLabel {
+    position:absolute;
+    top:4mm;
+    left:4mm;
+    width:6mm;
+    color:#ffffff;
+}
+
+#smallNavbarStripeContainer {
+    position:relative;
+    box-sizing:border-box;
+    width:14mm;
+    height:14mm;
+    overflow:hidden;
+    filter: grayscale(50%);
+    transition-duration: 0.2s;
+	transition-property: filter;
+	transition-timing-function: ease;
+    cursor:pointer;
+}
+
+#smallNavbarStripeContainer:hover {
+    filter: grayscale(0%);
+}
+
+#smallNavbarLogo {
+    position:relative;
+    margin-top:-7mm;
+    margin-bottom:0mm;
+    margin-right:3mm;
+    box-sizing:border-box;
+    padding:3.6mm 5.5mm 3.5mm 1.5mm;
+    border-radius:0;
+    height:32mm;
+    overflow:hidden;
+}
+
+.funTextT1 {
+    --text: #3b8dad;
+    --shadow: #6B1B5A;
+    /*font-family:"Rubik Mono One";*/
+    color:#5362f6;
+    color: var(--text);
+    text-shadow:
+        0.10em 0.10em var(--shadow),
+        0.09em 0.09em var(--shadow),
+        0.08em 0.08em var(--shadow),
+        0.07em 0.07em var(--shadow),
+        0.06em 0.06em var(--shadow),
+        0.05em 0.05em var(--shadow),
+        0.04em 0.04em var(--shadow),
+        0.03em 0.03em var(--shadow),
+        0.02em 0.02em var(--shadow),
+        0.01em 0.01em var(--shadow),
+        0.00em 0.00em var(--shadow),
+        0.105em 0.105em var(--shadow),
+        0.095em 0.095em var(--shadow),
+        0.085em 0.085em var(--shadow),
+        0.075em 0.075em var(--shadow),
+        0.065em 0.065em var(--shadow),
+        0.055em 0.055em var(--shadow),
+        0.045em 0.045em var(--shadow),
+        0.035em 0.035em var(--shadow),
+        0.025em 0.025em var(--shadow),
+        0.015em 0.015em var(--shadow),
+        0.005em 0.005em var(--shadow);
+}
+
+.funTextT2 {
+    --text: #F7AF02;
+    --shadow: #FF542D;
+    color:#5362f6;
+    color: var(--text);
+    text-shadow:
+        0.10em 0.10em var(--shadow),
+        0.09em 0.09em var(--shadow),
+        0.08em 0.08em var(--shadow),
+        0.07em 0.07em var(--shadow),
+        0.06em 0.06em var(--shadow),
+        0.05em 0.05em var(--shadow),
+        0.04em 0.04em var(--shadow),
+        0.03em 0.03em var(--shadow),
+        0.02em 0.02em var(--shadow),
+        0.01em 0.01em var(--shadow),
+        0.00em 0.00em var(--shadow),
+        0.105em 0.105em var(--shadow),
+        0.095em 0.095em var(--shadow),
+        0.085em 0.085em var(--shadow),
+        0.075em 0.075em var(--shadow),
+        0.065em 0.065em var(--shadow),
+        0.055em 0.055em var(--shadow),
+        0.045em 0.045em var(--shadow),
+        0.035em 0.035em var(--shadow),
+        0.025em 0.025em var(--shadow),
+        0.015em 0.015em var(--shadow),
+        0.005em 0.005em var(--shadow);
+}
+/* branding */
+
+@media all and (min-width: 200mm) {
+    #footerA1{
+        position:relative;
+        float:left;
+        width:50%;
+        top:0;
+        margin-right:-5mm;
+    }
+    #footerA2{
+        position:relative;
+        text-align:right;
+        float:right;
+        width:50%;
+        top:0;
+        margin-left:-5mm;
+        margin-top:7.5mm;
+    }
+    #footerS2 {
+        height: 2mm;
+    }
+    #footerS1 {
+        position:absolute;
+        top:-1.5mm;
+        left:50%;
+        padding-left:15mm;
+    }
+    #footerS1b {
+        position:absolute;
+        top:-3mm;
+        right:50%;
+        padding-right:15mm;
+    }
+    #footerStripe {
+        position:absolute;
+        top:-6.5mm;
+        left:50%;
+        margin-left:-24mm;
+        transform-origin: 50% 0%;
+        transform: rotate(-45deg);
+        width:50mm;
+        height:10mm;
+        overflow:visible;
+    }
+}
+
+@media all and (max-width: 200mm) {
+	#footerA1{
+        width:100%;
+        max-width:150mm;
+    }
+    #footerA2{
+        width:100%;
+        max-width:150mm;
+    }
+    #footerS2 {
+        height:8mm;
+    }
+    #footerS1 {
+        position:absolute;
+        top:5mm;
+    }
+    #footerS1b {
+        position:absolute;
+        top:-2mm;
+        left:0mm;
+    }
+    #footerStripe {
+        position:absolute;
+        top:-7mm;
+        left:40mm;
+        transform-origin: 50% 0%;
+        transform: rotate(-45deg);
+        width:70mm;
+        height:10mm;
+        overflow:visible;
+    }
+}
+
+.greenBackgroundText {
+    background-color: #859900 !important;
+    color: #ffffff;
+    padding: 0.5em 0.8em 0.35em 0.8em;
+    margin-right:0.5em;
+    margin-bottom:0.5em;
+    border-radius:2em;
+    width: auto;
+    display:inline-block;
+}
+
+.yellowBackgroundText {
+    background-color:#b58900 !important;
+    color: #ffffff;
+    padding: 0.5em 0.8em 0.35em 0.8em;
+    margin-right:0.5em;
+    margin-bottom:0.5em;
+    border-radius:2em;
+    width: auto;
+    display:inline-block;
+}
+
+.blueBackgroundText {
+    background-color:#2aa198 !important;
+    color: #ffffff;
+    padding: 0.5em 0.8em 0.35em 0.8em;
+    margin-right:0.5em;
+    margin-bottom:0.5em;
+    border-radius:2em;
+    width: auto;
+    display:inline-block;
+}
+
+.redBackgroundText {
+    background-color:#dc322f !important;
+    color: #ffffff;
+    padding: 0.5em 0.8em 0.35em 0.8em;
+    margin-right:0.5em;
+    margin-bottom:0.5em;
+    border-radius:2em;
+    width: auto;
+    display:inline-block;
+}
+
