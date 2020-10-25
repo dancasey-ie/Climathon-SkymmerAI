@@ -28,7 +28,7 @@ function printNavbar() {
     echo '<nav class="outerRestrictor navbar">';
     echo '<div class="innerRestrictor">';
     echo '<a onclick="navMenuButton();" id="smallNavbarStripeContainer" class="btnContrastLight navbarItem">';
-    echo '<img id="smallHomeNavLabel" src="https://repo.indentationerror.com/images/menuIcon.svg">Home</img>';
+    echo '<img id="smallHomeNavLabel" src="https://repo.indentationerror.com/images/menuIcon.svg"></img>';
     echo '</a>';
     
     echo '<a id="smallNavbarLogo">';
@@ -53,7 +53,7 @@ function printNavbar() {
     echo '<nav id="navMenu" class="navMenu hidden">'."\n";
     echo '<a class="navMenuLink" href="https://juzo.indentationerror.com/flooding/"><h1>Home</h1></a>'."\n";
     echo '<div class="smallSpacer"></div>'."\n";
-    echo '<a class="navMenuLink" href="https://juzo.indentationerror.com/cpanel/"><h1>Control Panel</h1></a>'."\n";
+    echo '<a class="navMenuLink" href="https://juzo.indentationerror.com/flooding/cpanel"><h1>Control Panel</h1></a>'."\n";
     echo '</nav>'."\n";
 
 //     $uData = getUserInfoFromSession();
