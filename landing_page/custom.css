@@ -1,0 +1,102 @@
+/*--------------------------------------------------------------Base/Global Styling*/
+
+html, body {
+    height: 1vh;
+}
+
+h1, h3, h4 {
+    color: #009fe3;
+}
+
+h2 {
+    color: #56585a;
+    font-size: 52px;
+}
+
+a {
+    transition: color 0.5s ease;
+}
+
+ul li {
+    color: #596fa6;
+}
+
+.main_container {
+    margin-top: 50px;
+    padding: 0px;
+    min-height: calc(100vh - 100px);
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar-custom {
+    background-color: black;
+    background-image: none;
+}
+
+.navbar-default .navbar-toggle{
+    border-color: #009fe3;
+    transition: background-color 0.5s ease;
+}
+    .navbar-default .navbar-toggle:focus {
+        background-color: black;
+    }
+
+
+    .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:active{
+        background-color: #009fe3;
+        border-color: #009fe3;
+    }
+
+
+
+
+.navbar-default .navbar-brand {
+    font-size: 34px;
+    font-family: 'Karla', sans-serif;
+    display: block;
+}
+
+._brand_text {
+    float: left;
+    margin-left: 5px;
+}
+
+.sub-brand {
+    font-size: 15px;
+    display: initial;
+    padding-top: 3px;
+}
+
+._logo_img {
+    height: 40px; 
+    width: auto;
+    float: left;
+    margin-top: -9px;
+}
+
+.navbar-default .navbar-brand:hover {
+    background-color: black;
+    color: #009fe3;
+}
+
+.nav .navbar-nav .navbar-right{
+    margin-top:20px!important
+}
+
+
+.active_menu {
+    color: #009fe3 !important;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+    background-color: black;
+    color: #009fe3;
+}
+
+
+
+._footer {
+    background-color: black;
+    color: #009fe3;
+    min-height:50px;
+}
