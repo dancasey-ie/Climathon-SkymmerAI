@@ -89,7 +89,7 @@ form {
     display:none;
     margin:0;
     padding:0;
-    background-color:#000000bb;
+    background-color:#000000;
 }
 .smallNavBarSpacer{
     display:none;
@@ -667,17 +667,16 @@ h6 {
 
 #navbarLogo {
     position:relative;
-    top:-14mm;
+    top:-2.5mm;
     left:-5mm;
-    width:32mm;
-    height:32mm;
+    height:11mm;
     overflow:visible;
 }
 
 #navbarStripeContainer {
     position:relative;
     box-sizing:border-box;
-    width:40mm;
+    width:45mm;
     height:14mm;
     overflow:hidden;
     filter: grayscale(50%);
@@ -696,8 +695,6 @@ h6 {
     position:absolute;
     top:-0%;
     left:-0%;
-    transform-origin: 50% 50%;
-    transform: rotate(-45deg) scale(1.5);
     width:100%;
     height:100%;
     overflow:visible;
@@ -714,29 +711,29 @@ h6 {
 #smallNavbarStripeContainer {
     position:relative;
     box-sizing:border-box;
+    background-color:#3b8dad;
     width:14mm;
     height:14mm;
     overflow:hidden;
-    filter: grayscale(50%);
     transition-duration: 0.2s;
-	transition-property: filter;
+	transition-property: background-color;
 	transition-timing-function: ease;
     cursor:pointer;
 }
 
 #smallNavbarStripeContainer:hover {
-    filter: grayscale(0%);
+    background-color:#000000;
 }
 
 #smallNavbarLogo {
     position:relative;
-    margin-top:-7mm;
+    margin-top:0.8mm;
     margin-bottom:0mm;
     margin-right:3mm;
     box-sizing:border-box;
     padding:3.6mm 5.5mm 3.5mm 1.5mm;
     border-radius:0;
-    height:32mm;
+    height:18mm;
     overflow:hidden;
 }
 

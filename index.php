@@ -42,7 +42,7 @@
 
 <div class="materialContrast outerRestrictor outerRestrictor" style="margin-top:-3mm;">
     <div class="background">
-        <img style="width:100%;" src="bkg.jpg"></img>
+        <img style="width:100%;" src="Glen-Coe-Pano.jpg"></img>
     </div>
     <div class="mainPageBuffer1 spacer"></div>
     <div class="innerRestrictor innerRestrictor">
@@ -50,6 +50,9 @@
         <p>Using blah blah Machine Learning blah blah e.t.c</p>
     </div>
     <div class="mainPageBuffer2 spacer"></div>
+    <div class="innerRestrictor innerRestrictor">
+        <h6 style="position:absolute; bottom:0mm;">Coire nan Lochan, on the south side of Glen Coe - 7 July 2016 Javier Olivares - CC-BY-SA-4.0</h6>
+    </div>
 </div>
 
 <div class="material outerRestrictor outerRestrictor">
@@ -58,6 +61,7 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dapibus lectus nec velit venenatis, in interdum sapien tristique. Donec id pulvinar eros. Suspendisse vulputate vel felis ut pellentesque. Pellentesque et venenatis nulla. Nunc sagittis neque a neque molestie sagittis ac et neque. Vestibulum posuere vitae nisl pellentesque mollis. Aenean ultricies vulputate elit eu ornare. Etiam tempor lorem eget nisl accumsan, ac mattis ipsum lobortis. In placerat tristique est, sit amet sollicitudin tellus tempor venenatis. Nulla pharetra egestas massa, a sollicitudin metus egestas et. Duis ut libero cursus, ultrices tellus et, pretium nisl. Aliquam id mi sit amet est vehicula interdum eget in risus. Donec diam tellus, sagittis ut fermentum id, consectetur a odio. Nam scelerisque at lorem id porttitor. Curabitur metus nisl, fringilla a metus sed, vehicula rutrum velit. Morbi rhoncus gravida ex, elementum gravida lacus consequat id. </p>
     </div>
 </div>
+
 <div class="materialEmphasis outerRestrictor outerRestrictor">
     <div class="innerRestrictor innerRestrictor">
         <h1>How we work</h1>
